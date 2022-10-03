@@ -48,7 +48,7 @@ const Category = () => {
 
   const [addCategory, { loading, error, data }] = useMutation(SET_Category);
 
-  addCategory({ variables: { category } });
+  addCategory({ variables: { category: categoryObject } });
 
   useEffect(() => {
     if (data) {
